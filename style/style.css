@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #89a8d0, #7fcbd0, #6ec6ca);
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.main > h4{
+    color: white;
+    font-size: 30px;
+    margin-top: 2%;
+}
+.upper_div{
+    width: 80%;
+    display: flex;
+    justify-content:space-between;
+    margin-top: 4%;
+}
+.up_div-c{
+    box-sizing: border-box;
+    box-shadow: -7px 9px 16px 1px #f1eeee;
+    border-radius: 16px;
+}
+#up_div-c1{
+    width: 30%;
+    background-color: white;
+    padding: 2%;
+    height: 345px;
+
+}
+#up_div-c1 > h4{
+    font-size: 20px;
+    color:#2596be;
+    margin-bottom:2%;
+}
+#up_div-c1 > form > label{
+    font-size: 14px;
+    color:black;
+    font-weight: bolder;
+}
+#up_div-c1 > form > input,select{
+    width: 98%;
+    height: 30px;
+    border-radius: 6px;
+    border:0.5px solid gray;
+    margin-bottom: 2%;
+}
+#up_div-c1 > form > #desc{
+    height: 60px;
+    text-align: left;      
+    line-height: normal; 
+    width: 98%;
+}
+#sub_btn{
+    width: 100%;
+    height: 30px;
+    border-radius: 6px;
+    border:0.5px solid gray;
+    background-color: #2596be;
+    color:white;
+    font-weight: bolder;
+}
+#sub_btn:hover{
+    background-color: #1b7a9e;
+    cursor: pointer;
+}
+#up_div-c2{
+    width: 67%;
+    background-color: white;
+    padding: 2%;
+    height: 345px;
+    overflow-y:auto;
+
+
+}
+#up_div-c2 > h4{
+    font-size: 20px;
+    color:#2596be;
+    margin-bottom:2%;
+}
+#event_btns{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 2%;
+}
+#event_btns > button{
+    width: 48%;
+    height: 30px;
+    border-radius: 6px;
+    border:0.5px solid gray;
+    background-color: #2596be;
+    color:white;
+    font-weight: bolder;
+}
+#event_btns > button:hover{
+    background-color: #1b7a9e;
+    cursor: pointer;
+}
+.cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.card{
+    width: 48%;
+    border:1px solid #f1eeee;
+    border-radius: 16px;
+    background-color: white;
+    align-items: center;
+    position: relative;
+    margin-bottom: 1%;
+}
+.card h4{
+    color:#2596be;
+    margin: 10px;
+}
+.card p{
+    color: black;
+    margin: 10px;
+}
+.card .cut_btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    background-color: red;
+    color:white;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border:0;
+}
+.card .cut_btn:hover{
+    background-color: darkred;
+    cursor: pointer;
+}
+.lower_div{
+    width: 80%;
+    box-sizing: border-box;
+    box-shadow: -7px 9px 16px 1px #f1eeee;
+    border-radius: 16px;
+    background-color: white;
+    margin-top: 2%;
+    padding: 1.5%;
+}
+.lower_div h4{
+    color:#2596be;
+}
