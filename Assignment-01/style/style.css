@@ -90,6 +90,7 @@ body{
     color:#2596be;
     margin-bottom:2%;
 }
+
 #event_btns{
     display: flex;
     justify-content: space-between;
@@ -160,5 +161,30 @@ body{
     padding: 1.5%;
 }
 .lower_div h4{
-    color:#2596be;
+    color: #2596be;
+}
+.lower_div h4 span{
+    color: coral;
+}
+
+
+@media (max-width:1000px) {
+    .upper_div{
+        flex-direction: column;
+    }
+    #up_div-c1{
+        width: 60%;
+        margin: auto;
+    }
+
+    #up_div-c2{
+        width: 90%;
+        margin: auto;
+        margin-top: 2%;
+    }
+
+    .lower_div{
+        margin-bottom: 2%;
+    }
+    
 }
