@@ -1,0 +1,148 @@
+:root {
+  --bg: #0f172a;
+  --card: rgba(255, 255, 255, 0.08);
+  --text: #e2e8f0;
+  --accent: #38bdf8;
+  --button: #f97316;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: var(--text);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header p {
+  opacity: 0.7;
+}
+
+/* Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Cards */
+.card {
+  background: var(--card);
+  backdrop-filter: blur(12px);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.full {
+  grid-column: span 2;
+}
+
+/* Search */
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+button {
+  background: var(--button);
+  border: none;
+  padding: 12px 18px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: #ea580c;
+}
+
+/* History */
+.history {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.history span {
+  background: var(--accent);
+  color: #000;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.history span:hover {
+  opacity: 0.8;
+}
+
+/* Weather Box */
+.weather-box {
+  margin-top: 10px;
+}
+
+.weather-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.weather-item {
+  background: rgba(255,255,255,0.1);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.placeholder {
+  opacity: 0.6;
+}
+
+/* Console */
+pre {
+  background: #020617;
+  color: #22c55e;
+  padding: 15px;
+  border-radius: 10px;
+  height: 160px;
+  overflow-y: auto;
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full {
+    grid-column: span 1;
+  }
+}
