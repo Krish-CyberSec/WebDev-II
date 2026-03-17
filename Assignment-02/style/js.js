@@ -1,6 +1,3 @@
-// const form=document.querySelector("#form");
-// const city=document.querySelector("#city");
-// const API_KEY='cb9b20f45fc5db36cbc48f495e29a9fd';
 const apiKey = 'cb9b20f45fc5db36cbc48f495e29a9fd';
 const searchBtn = document.getElementById("searchBtn");
 const cityInput = document.getElementById("cityInput");
