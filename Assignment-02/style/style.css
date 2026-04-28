@@ -44,7 +44,7 @@ header p {
 /* Cards */
 .card {
   background: var(--card);
-  backdrop-filter: blur(12px);
+  /* backdrop-filter: blur(12px); */
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
