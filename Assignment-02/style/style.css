@@ -20,7 +20,7 @@ body {
   padding: 20px;
 }
 
-/* Header */
+
 header {
   text-align: center;
   margin-bottom: 30px;
@@ -34,17 +34,17 @@ header p {
   opacity: 0.7;
 }
 
-/* Layout */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
-/* Cards */
+
 .card {
   background: var(--card);
-  /* backdrop-filter: blur(12px); */
+  
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
@@ -54,7 +54,7 @@ header p {
   grid-column: span 2;
 }
 
-/* Search */
+
 .search-box {
   display: flex;
   gap: 10px;
@@ -84,7 +84,7 @@ button:hover {
   background: #ea580c;
 }
 
-/* History */
+
 .history {
   display: flex;
   flex-wrap: wrap;
@@ -104,7 +104,7 @@ button:hover {
   opacity: 0.8;
 }
 
-/* Weather Box */
+
 .weather-box {
   margin-top: 10px;
 }
@@ -125,7 +125,7 @@ button:hover {
   opacity: 0.6;
 }
 
-/* Console */
+
 pre {
   background: #020617;
   color: #22c55e;
@@ -136,7 +136,7 @@ pre {
   font-size: 13px;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;

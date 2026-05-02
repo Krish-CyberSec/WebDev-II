@@ -4,7 +4,7 @@ window.addEventListener('load', function() {
     const eventdateInput = document.getElementById('eventdate');
     const eventdescriptionInput = document.getElementById('desc');
     const categoryInput = document.getElementById('event');
-    // for adding new event
+    
     form.addEventListener('submit', function(e) {
         e.preventDefault();
         const eventtitle = eventtitleInput.value;
@@ -32,12 +32,12 @@ window.addEventListener('load', function() {
         });
         form.reset();
     });
-    // for clearing all events
+    
     document.getElementById('clear_all-events').addEventListener('click', function() {
         const cardContainer = document.getElementById('cards');
         cardContainer.innerHTML = '';
     });
-    // for adding sample event
+    
     document.getElementById('add_sample').addEventListener('click', function() {
         const cardContainer = document.getElementById('cards');
         const sampleCard = document.createElement('div');
@@ -54,7 +54,7 @@ window.addEventListener('load', function() {
             sampleCard.remove()
         });
     });
-    // for key press event
+    
     document.addEventListener('keydown', function(e) {
         const key=document.getElementById('key');
         key.textContent = e.key;
